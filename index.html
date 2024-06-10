@@ -1,1525 +1,230 @@
-<!DOCTYPE html><html lang="en-us" >
-
-
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  
-  
-  
-    <meta name="generator" content="Wowchemy 5.5.0 for Hugo" />
-  
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-  
-  
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  
-
-  
-  
-  
-    
-      
-      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
-    
-  
-
-  
-  
-  
-  
-  
-  
-
-  
-
-  
-  
-  
-    
-  
-  <meta name="description" content="HealTac2024 Tutorial" />
-
-  
-  
-  
-    <meta name="theme-color" content="#002248" />
-  
-
-  
-  
-
-  
-
-  <link rel="stylesheet" href="/css/vendor-bundle.min.c7b8d9abd591ba2253ea42747e3ac3f5.css" media="print" onload="this.media='all'">
-
-  
-  
-  
-    
-    
-
-    
-    
-    
-    
-      
-      
-      
-      
-    
-    
-    
-
-    
-    
-    
-      
-    
-    
-    
-    
-    
-    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
-    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
-
-    
-    
-    
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.css" integrity="" crossorigin="anonymous" media="print" onload="this.media='all'">
-    
-
-    
-
-    
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-        
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-  
-
-  
-  
-  
-  
-  
-  <link rel="stylesheet" href="/css/wowchemy.423d2d559d7bd242b701389379f2364e.css" />
-
-  
-
-
-
-  
-
-
-  
-
-
-  
-
-
-
-
-  
-  
-  
-
-  
-    <link rel="alternate" href="/tutorial/index.xml" type="application/rss+xml" title="HealTac 2024 Tutorial" />
-  
-
-  
-    <link rel="manifest" href="/manifest.webmanifest" />
-  
-
-  <link rel="icon" type="image/png" href="/media/icon_hubed9f227f414ccc7c06d5e087c036f8a_39756_32x32_fill_lanczos_center_3.png" />
-  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hubed9f227f414ccc7c06d5e087c036f8a_39756_180x180_fill_lanczos_center_3.png" />
-
-  <link rel="canonical" href="https://healtac_2024_tutorial.github.io" />
-
-  
-  
-  
-  
-  
-  
-  
-  
-    
-    
-  
-  
-
-  
-  
-    
-    
-  
-  <meta property="twitter:card" content="summary" />
-  
-    <meta property="twitter:site" content="@https://twitter.com/lang_plus_mols" />
-    <meta property="twitter:creator" content="@https://twitter.com/lang_plus_mols" />
-  
-  <meta property="og:site_name" content="Language &#43; Molecules @ ACL 2024" />
-  <meta property="og:url" content="https://language-plus-molecules.github.io/tutorial/" />
-  <meta property="og:title" content="Language &#43; Molecules @ ACL 2024" />
-  <meta property="og:description" content="Language &#43; Molecules" /><meta property="og:image" content="https://language-plus-molecules.github.io/media/icon_hubed9f227f414ccc7c06d5e087c036f8a_39756_512x512_fill_lanczos_center_3.png" />
-    <meta property="twitter:image" content="https://language-plus-molecules.github.io/media/icon_hubed9f227f414ccc7c06d5e087c036f8a_39756_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
-  
-    
-  
-
-  
-
-
-
-  
-
-  
-<link rel="preload" href="/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-<link rel="preload" href="/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-
-
-  <title>Language &#43; Molecules @ ACL 2024</title>
-</head>
-
-
-<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" class="page-wrapper   " data-wc-page-id="c3224f3a64174f08aaf31e1f1d16ffd3" >
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <script src="/js/wowchemy-init.min.24c87d0ac1492b3933e8b941f1cfddd6.js"></script>
-
-  
-
-
-<aside class="search-modal" id="search">
-  <div class="container">
-    <section class="search-header">
-
-      <div class="row no-gutters justify-content-between mb-3">
-        <div class="col-6">
-          <h1>Search</h1>
-        </div>
-        <div class="col-6 col-search-close">
-          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
-        </div>
-      </div>
-
-      <div id="search-box">
-        
-        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
-        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
-        aria-label="Search...">
-        
-      </div>
-
-      
-      
-
-      
-
-    </section>
-    <section class="section-search-results">
-
-      <div id="search-hits">
-        
-      </div>
-
-    </section>
-  </div>
-</aside>
-
-
-
-  <div class="page-header">
-    
-
-
-
-
-
-
-
-
-
-
-
-
-<header class="header--fixed">
-  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
-    <div class="container-xl">
-
-      
-      <div class="d-none d-lg-inline-flex">
-        <a class="navbar-brand" href="/">Language &#43; Molecules @ ACL 2024</a>
-      </div>
-      
-
-      
-      <button type="button" class="navbar-toggler" data-toggle="collapse"
-              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
-      <span><i class="fas fa-bars"></i></span>
-      </button>
-      
-
-      
-      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-        <a class="navbar-brand" href="/">Language &#43; Molecules @ ACL 2024</a>
-      </div>
-      
-
-      
-      
-      <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
-
-        
-        <ul class="navbar-nav d-md-inline-flex">
-          
-
-          
-
-          
-          
-          
-            
-          
-
-          
-
-          
-          
-          
-          
-
-          
-            
-              
-              
-            
-            
-              
-              
-              
-                
-              
-              
-            
-          
-
-          <li class="nav-item">
-            <a class="nav-link " href="/#call"><span>Call for Papers</span></a>
-          </li>
-
-          
-          
-
-          
-
-          
-          
-          
-            
-          
-
-          
-
-          
-          
-          
-          
-
-          
-            
-              
-              
-            
-            
-              
-              
-              
-                
-              
-              
-            
-          
-
-          <li class="nav-item">
-            <a class="nav-link " href="/#dates"><span>Dates</span></a>
-          </li>
-
-          
-          
-
-          
-
-          
-          
-          
-            
-          
-
-          
-
-          
-          
-          
-          
-
-          
-            
-              
-              
-            
-            
-              
-              
-              
-                
-              
-              
-            
-          
-
-          <li class="nav-item">
-            <a class="nav-link " href="/#sharedtask"><span>Shared Task</span></a>
-          </li>
-
-          
-          
-
-          
-
-          
-          
-          
-            
-          
-
-          
-
-          
-          
-          
-          
-
-          
-            
-              
-              
-            
-            
-              
-              
-              
-                
-              
-              
-            
-          
-
-          <li class="nav-item">
-            <a class="nav-link " href="/#leaderboard"><span>Leaderboard</span></a>
-          </li>
-
-          
-          
-
-          
-
-          
-          
-          
-            
-          
-
-          
-
-          
-          
-          
-          
-
-          
-            
-              
-              
-            
-            
-              
-              
-              
-                
-              
-              
-            
-          
-
-          <li class="nav-item">
-            <a class="nav-link " href="/#speakers"><span>Speakers</span></a>
-          </li>
-
-          
-          
-
-          
-
-          
-          
-          
-            
-          
-
-          
-
-          
-          
-          
-          
-
-          
-            
-              
-              
-            
-            
-              
-              
-              
-                
-              
-              
-            
-          
-
-          <li class="nav-item">
-            <a class="nav-link " href="/#schedule"><span>Schedule</span></a>
-          </li>
-
-          
-          
-
-          
-
-          
-          
-          
-            
-          
-
-          
-
-          
-          
-          
-          
-
-          
-            
-              
-              
-            
-            
-              
-              
-              
-                
-              
-              
-            
-          
-
-          <li class="nav-item">
-            <a class="nav-link " href="/#paper"><span>Accepted Papers</span></a>
-          </li>
-
-          
-          
-
-          
-
-          
-          
-          
-            
-          
-
-          
-
-          
-          
-          
-          
-
-          
-            
-              
-              
-            
-            
-              
-              
-              
-                
-              
-              
-            
-          
-
-          <li class="nav-item">
-            <a class="nav-link " href="/#organization"><span>Organization</span></a>
-          </li>
-
-          
-          
-
-          
-
-          
-          
-          
-            
-          
-
-          
-
-          
-          
-          
-          
-
-          
-            
-              
-              
-            
-            
-          
-
-          <li class="nav-item">
-            <a class="nav-link  active" href="/tutorial" data-target="[]"><span>EACL Tutorial</span></a>
-          </li>
-
-          
-          
-
-          
-
-          
-          
-          
-            
-          
-
-          
-
-          
-          
-          
-          
-
-          
-            
-              
-              
-            
-            
-              
-              
-              
-                
-              
-              
-            
-          
-
-          <li class="nav-item">
-            <a class="nav-link " href="/#contact"><span>Contact</span></a>
-          </li>
-
-          
-          
-
-        
-
-          
-        </ul>
-      </div>
-
-      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
-
-        
-        
-
-        
-        
-
-        
-        
-        
-
-        
-        
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Stylish Portfolio Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <!-- Side Menu -->
+    <a id="menu-toggle" href="#" class="btn btn-primary btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <div id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+        <li class="sidebar-brand"><a href="http://startbootstrap.com">Start Bootstrap</a></li>
+        <li><a href="#top">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
-
     </div>
-  </nav>
-</header>
-
-
-  </div>
-
-  <div class="page-body">
-    
-    
-    
-
-    
-
-
-
-
-
-
+    <!-- /Side Menu -->
   
-
-
-
-
-
-
-
-  
-
-  
-  
-  
-    
-  
-<div class="universal-wrapper pt-3">
-  <h1></h1>
-
-  
-
-  
-</div>
-
-
-
-<div class="universal-wrapper">
-  
-
-  
-  
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item view-compact">
-  <div class="media-body">
-
-    <div class="section-subheading article-title mb-0 mt-0">
-      <a href="/tutorial/intro/" >Language &#43; Molecules  
-{style=&#34;color: white; font-size: 4rem; text-shadow: 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black;&#34;}    
-@ EACL 2024 Tutorial
-{style=&#34;color: white; font-size: 3rem; text-shadow: 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black;&#34;}
-</a>
-    </div>
-
-    
-    <a href="/tutorial/intro/"  class="summary-link">
-      <div class="article-style">
-        March 21, 2024 hybrid in Malta &amp; Remote
-Synthesizing Language and Molecules for Scientific Insight and Discovery
+    <!-- Full Page Image Header Area -->
+    <div id="top" class="header">
+      <div class="vert-text">
+        <h1>Start Bootstrap</h1>
+        <h3><em>We</em> Build Great Templates, <em>You</em> Make Them Better</h3>
+        <a href="#about" class="btn btn-default btn-lg">Find Out More</a>
       </div>
-    </a>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-        
-
-
-<div class="article-metadata">
-
-  
-  
-
-  
-  <span class="article-date">
-    
-    
-      
-    
-    Jan 1, 0001
-  </span>
-  
-
-  
-
-  
-
-  
-  
-  
-  
-
-  
-  
-
-</div>
-
-      
     </div>
-
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
+    <!-- /Full Page Image Header Area -->
   
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item view-compact">
-  <div class="media-body">
-
-    <div class="section-subheading article-title mb-0 mt-0">
-      <a href="/tutorial/about/" ></a>
-    </div>
-
-    
-    <a href="/tutorial/about/"  class="summary-link">
-      <div class="article-style">
-        Welcome to the Language + Molecules Tutorial! Join us for this introductory tutorial targetted at NLP researchers with no knowledge of chemistry as we explore cutting-edge new work in the integration of molecules and natural language, with exciting applications such as developing new drugs, materials, and chemical processes.
+    <!-- Intro -->
+    <div id="about" class="intro">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3 text-center">
+            <h2>Subtle Sidebar is the Perfect Template for your Next Portfolio Website Project!</h2>
+            <p class="lead">This template really has it all. It's up to you to customize it to your liking! It features some fresh photography courtesy of <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a>.</p>
+          </div>
+        </div>
       </div>
-    </a>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-        
-
-
-<div class="article-metadata">
-
-  
-  
-
-  
-  <span class="article-date">
-    
-    
-      
-    
-    Jan 1, 0001
-  </span>
-  
-
-  
-
-  
-
-  
-  
-  
-  
-
-  
-  
-
-</div>
-
-      
     </div>
-
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-  
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item view-compact">
-  <div class="media-body">
-
-    <div class="section-subheading article-title mb-0 mt-0">
-      <a href="/tutorial/outline/" >Outline</a>
-    </div>
-
-    
-    <a href="/tutorial/outline/"  class="summary-link">
-      <div class="article-style">
-        Outline [180 min.] Applying language models to the scientific domain is becoming increasingly popular due to its potential impact for accelerating scientific discovery (Hope et al., 2022). Beyond extracting information from scientific literature, NLP has the possibility to increase control of the scientific discovery process, which can be achieved through multimodal representations and generative language models.
-      </div>
-    </a>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-        
-
-
-<div class="article-metadata">
-
-  
-  
-
-  
-  <span class="article-date">
-    
-    
-      
-    
-    Jan 1, 0001
-  </span>
-  
-
-  
-
-  
-
-  
-  
-  
-  
-
-  
-  
-
-</div>
-
-      
-    </div>
-
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-  
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item view-compact">
-  <div class="media-body">
-
-    <div class="section-subheading article-title mb-0 mt-0">
-      <a href="/tutorial/reading_list/" >Reading List (Subject to Change)</a>
-    </div>
-
-    
-    <a href="/tutorial/reading_list/"  class="summary-link">
-      <div class="article-style">
-        Molecule Representations and Language Models: &ldquo;Smiles, a chemical language and information system. 1. introduction to methodology and encoding rules.&rdquo; Weininger, 1988. &ldquo;Self-referencing embedded strings (selfies): A 100% robust molecular string representation.
-      </div>
-    </a>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-        
-
-
-<div class="article-metadata">
-
-  
-  
-
-  
-  <span class="article-date">
-    
-    
-      
-    
-    Jan 1, 0001
-  </span>
-  
-
-  
-
-  
-
-  
-  
-  
-  
-
-  
-  
-
-</div>
-
-      
-    </div>
-
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-  
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item view-compact">
-  <div class="media-body">
-
-    <div class="section-subheading article-title mb-0 mt-0">
-      <a href="/tutorial/interactive_example/" >An Interactive Example</a>
-    </div>
-
-    
-    <a href="/tutorial/interactive_example/"  class="summary-link">
-      <div class="article-style">
-        To be released.
-      </div>
-    </a>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-        
-
-
-<div class="article-metadata">
-
-  
-  
-
-  
-  <span class="article-date">
-    
-    
-      
-    
-    Jan 1, 0001
-  </span>
-  
-
-  
-
-  
-
-  
-  
-  
-  
-
-  
-  
-
-</div>
-
-      
-    </div>
-
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-  
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="media stream-item view-compact">
-  <div class="media-body">
-
-    <div class="section-subheading article-title mb-0 mt-0">
-      <a href="/tutorial/presenters/" >Presenters</a>
-    </div>
-
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-        
-
-
-<div class="article-metadata">
-
-  
-  
-
-  
-  <span class="article-date">
-    
-    
-      
-    
-    Jan 1, 0001
-  </span>
-  
-
-  
-
-  
-
-  
-  
-  
-  
-
-  
-  
-
-</div>
-
-      
-    </div>
-
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-  
-
-  
-
-</div>
-  </div>
-
-  <div class="page-footer">
-    
-    
-    <div class="container">
-      <footer class="site-footer">
-
-  
-
-
-
-  
-
-  
-
-  
-
-  
-  
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-    
-  
-  
-    
-  
-
-  
-
-  
-  <p class="powered-by copyright-license-text">
-    © 2023 Me. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
-  </p>
-  
-
-  <p class="powered-by footer-license-icons">
-    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank" aria-label="Creative Commons">
-      <i class="fab fa-creative-commons fa-2x" aria-hidden="true"></i>
-      <i class="fab fa-creative-commons-by fa-2x" aria-hidden="true"></i>
-      
-        <i class="fab fa-creative-commons-nc fa-2x" aria-hidden="true"></i>
-      
-      
-        <i class="fab fa-creative-commons-nd fa-2x" aria-hidden="true"></i>
-      
-    </a>
-  </p>
-
-
-
-
-  <p class="powered-by">
-    
-    
-    
-      
-      
-      
-      
-      
-      
-      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
-    
-  </p>
-</footer>
-
-    </div>
-    
-  </div>
-
-      
-
-    
-    <script src="/js/vendor-bundle.min.32ee83730ed883becad04bc5170512cc.js"></script>
-
-    
-    
-    
-      
-
-      
-      
-
-      
-
-    
-
-    
-    
-    
-      <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.js" integrity="" crossorigin="anonymous"></script>
-    
-
-    
-    
-
-    
-    
-    
-      
-      <script id="search-hit-fuse-template" type="text/x-template">
-        <div class="search-hit" id="summary-{{key}}">
-          <div class="search-hit-content">
-            <div class="search-hit-name">
-              <a href="{{relpermalink}}">{{title}}</a>
-              <div class="article-metadata search-hit-type">{{type}}</div>
-              <p class="search-hit-description">{{snippet}}</p>
+    <!-- /Intro -->
+  
+    <!-- Services -->
+    <div id="services" class="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-md-offset-4 text-center">
+            <h2>Our Services</h2>
+            <hr>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2 col-md-offset-2 text-center">
+            <div class="service-item">
+              <i class="service-icon fa fa-rocket"></i>
+              <h4>Spacecraft Repair</h4>
+              <p>Did your navigation system shut down in the middle of that asteroid field? We can repair any dings and scrapes to your spacecraft!</p>
+            </div>
+          </div>
+          <div class="col-md-2 text-center">
+            <div class="service-item">
+              <i class="service-icon fa fa-magnet"></i>
+              <h4>Problem Solving</h4>
+              <p>Need to know how magnets work? Our problem solving solutions team can help you identify problems and conduct exploratory research.</p>
+            </div>
+          </div>
+          <div class="col-md-2 text-center">
+            <div class="service-item">
+              <i class="service-icon fa fa-shield"></i>
+              <h4>Blacksmithing</h4>
+              <p>Planning a time travel trip to the middle ages? Preserve the space time continuum by blending in with period accurate armor and weapons.</p>
+            </div>
+          </div>
+          <div class="col-md-2 text-center">
+            <div class="service-item">
+              <i class="service-icon fa fa-pencil"></i>
+              <h4>Pencil Sharpening</h4>
+              <p>We've been voted the best pencil sharpening service for 10 consecutive years. If you have a pencil that feels dull, we'll get it sharp!</p>
             </div>
           </div>
         </div>
-      </script>
-      
-        <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
-      
-    
+      </div>
+    </div>
+    <!-- /Services -->
 
-    
-    
+    <!-- Callout -->
+    <div class="callout">
+      <div class="vert-text">
+        <h1>A Dramatic Text Area</h1>
+      </div>
+    </div>
+    <!-- /Callout -->
 
-    
-    
-    
-    
+    <!-- Portfolio -->
+    <div id="portfolio" class="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-md-offset-4 text-center">
+            <h2>Our Work</h2>
+            <hr>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-md-offset-2 text-center">
+            <div class="portfolio-item">
+              <a href="#"><img class="img-portfolio img-responsive" src="img/portfolio-1.jpg"></a>
+              <h4>Cityscape</h4>
+            </div>
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="portfolio-item">
+              <a href="#"><img class="img-portfolio img-responsive" src="img/portfolio-2.jpg"></a>
+              <h4>Is That On Fire?</h4>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-md-offset-2 text-center">
+            <div class="portfolio-item">
+              <a href="#"><img class="img-portfolio img-responsive" src="img/portfolio-3.jpg"></a>
+              <h4>Stop Sign</h4>
+            </div>
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="portfolio-item">
+              <a href="#"><img class="img-portfolio img-responsive" src="img/portfolio-4.jpg"></a>
+              <h4>Narrow Focus</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Portfolio -->
 
-    
-    
-      
-      
-      
-      
-      
-      
-      
-    
+    <!-- Call to Action -->
+    <div class="call-to-action">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3 text-center">
+            <h3>The buttons below are impossible to resist.</h3>
+            <a href="#" class="btn btn-lg btn-default">Click Me!</a>
+            <a href="#" class="btn btn-lg btn-primary">Look at Me!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Call to Action -->
 
+    <!-- Map -->
+    <div id="contact" class="map">
+      <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a></small></iframe>
+    </div>
+    <!-- /Map -->
     
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3 text-center">
+            <ul class="list-inline">
+              <li><i class="fa fa-facebook fa-3x"></i></li>
+              <li><i class="fa fa-twitter fa-3x"></i></li>
+              <li><i class="fa fa-dribbble fa-3x"></i></li>
+            </ul>
+            <div class="top-scroll">
+              <a href="#top"><i class="fa fa-circle-arrow-up scroll fa-4x"></i></a>
+            </div>
+            <hr>
+            <p>Copyright &copy; Company 2013</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- /Footer -->
 
-    
-    
-    
-    <script id="page-data" type="application/json">{"use_headroom":true}</script>
+    <!-- JavaScript -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
 
-    
-    
-      <script src="/js/wowchemy-headroom.c251366b4128fd5e6b046d4c97a62a51.js" type="module"></script>
-    
-    
-    
-    
-    
-    
-    
-    
-      
-      
-    
-    
-    <script src="/en/js/wowchemy.min.f28073ac38e4c16e9c9244919450f3c9.js"></script>
+    <!-- Custom JavaScript for the Side Menu and Smooth Scrolling -->
+    <script>
+        $("#menu-close").click(function(e) {
+            e.preventDefault();
+            $("#sidebar-wrapper").toggleClass("active");
+        });
+    </script>
+    <script>
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#sidebar-wrapper").toggleClass("active");
+        });
+    </script>
+    <script>
+      $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+            || location.hostname == this.hostname) {
 
-    
-    
-      <script src="/js/wowchemy-map.a26e9d2f7238ba5b868384f1c5bc6477.js" type="module"></script>
-    
-    
-    
-    
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset().top
+              }, 1000);
+              return false;
+            }
+          }
+        });
+      });
+    </script>
 
+  </body>
 
-
-
-
-
-</body>
 </html>
