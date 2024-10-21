@@ -1,5 +1,5 @@
 # miccai2024_tutorial
-Repository for UCL's part in the Foundation Models for Medical ImagING (FOMMIA) tutorial at MICCAI2024. 
+Repository for UCL's Section in the Foundation Models for Medical ImagING (FOMMIA) tutorial at MICCAI2024. 
 
 October 6, 2024 at MICCAI 2024
 | Time         | Topic                                  | Duration |
