@@ -1,13 +1,11 @@
-# healtac2024_tutorial
-Repository for HealTac2024 tutorial material and website
+# miccai2024_tutorial
+Repository for UCL's section in the Foundation Models for Medical ImagING (FOMMIA) tutorial at MICCAI2024. 
 
+October 6, 2024 at MICCAI 2024
 | Time         | Topic                                  | Duration |
 |--------------|----------------------------------------|----------|
-| 2:00pm       | History of LLM                         | 20 mins  |
-| 2:20pm       | LLM Key Terminology                    | 15 mins  |
-| 2:35pm       | LLaMA                                  | 15 mins  |
-| 2:50pm       | Phi                                    | 10 mins   |
-| 3:00pm       | Hands on session #1 Prompting          | 30 mins  |
-| 3:30pm       | Break                                  | 30 mins  |
-| 4:00pm       | Hands on session #2 Instruction Tuning | 40 mins  |
-| 4:40pm       | Multimodal LLM                         | 20 mins  |
+| 11:10am       | Background (by Professor Honghan Wu)   | 15 mins  |
+| 11:25am       | Expanding LLMs to Vision: LVLMs (by Yunsoo Kim) | 10 mins  |
+| 11:35am       | LVLMs in Medicine (by Yunsoo Kim) | 15 mins  |
+| 11:50am       | Enhancing LVLMs Utilization: Prompting (by Jinge Wu) | 10 mins  |
+| 12:00pm       | Enhancing LVLMs Utilization: Instruction Tuning (by Jinge Wu) | 10 mins  |
